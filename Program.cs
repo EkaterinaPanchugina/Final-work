@@ -31,6 +31,10 @@ void PrintArrayToConsole(string[] array)
     Console.WriteLine("");
 }
 
+Console.WriteLine("Your array:");
+PrintArrayToConsole(array);
+Console.WriteLine("Array with elements <= 3:");
+PrintArrayToConsole(newArray);
 
 
 
