@@ -4,7 +4,6 @@
 Пример: ["hello", "2", "world", ":-)"] -> ["2", ":-)"]*/
 
 //Метод поиска элементов, где не более 3 символов
-
 string[] GetArrayLessOrEqualSymbols(string[] array)
 {
     string[] newArray = new string[0];
@@ -19,7 +18,18 @@ string[] GetArrayLessOrEqualSymbols(string[] array)
         }
     }
     return newArray;
-
+}
+// Метод вывода на печать
+void PrintArrayToConsole(string[] array)
+{
+    Console.Write("");
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (i != array.Length -1) Console.Write($"{array[i]}, ");
+        else Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine("");
+}
 
 
 
