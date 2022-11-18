@@ -13,4 +13,4 @@
 // Создаем изначальный массив размерностью 5 и новый массив, который получим из метода 
 
 string[] array = new string[5] {"hello", "2", "world", ":-)", "123456"};
-string[] newArray = GetArrayLessOrEqualSymbols(userArray);
+string[] newArray = GetArrayLessOrEqualSymbols(array);
