@@ -12,13 +12,14 @@ string[] GetArrayLessOrEqualSymbols(string[] array)
     {
         if (array[i].Length <= 3)
         {
-            Array.Resize<string>(ref resultArray, resultArray.Length + 1);
-            resultArray[indexNewArray] = array[i];
+            Array.Resize<string>(ref newArray, newArray.Length + 1);
+            newArray[indexNewArray] = array[i];
             indexNewArray++;
         }
     }
     return newArray;
 }
+
 // Метод вывода на печать
 void PrintArrayToConsole(string[] array)
 {
@@ -31,15 +32,13 @@ void PrintArrayToConsole(string[] array)
     Console.WriteLine("");
 }
 
-Console.WriteLine("Your array:");
-PrintArrayToConsole(array);
-Console.WriteLine("Array with elements <= 3:");
-PrintArrayToConsole(newArray);
-
-
-
-
 // Создаем изначальный массив размерностью 5 и новый массив, который получим из метода 
 
 string[] array = new string[5] {"hello", "2", "world", ":-)", "123456"};
 string[] newArray = GetArrayLessOrEqualSymbols(array);
+
+Console.WriteLine("Your array:");
+PrintArrayToConsole(array);
+
+Console.WriteLine("Array with elements <= 3:");
+PrintArrayToConsole(newArray);
